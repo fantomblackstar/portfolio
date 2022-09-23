@@ -1,0 +1,18 @@
+@import "../scss/abstracts/mixins";
+@import "../scss/abstracts/variables";
+
+@import "../scss/base/base";
+@import "../scss/base/typography";
+
+@import "../scss/components/buttons";
+
+@import "../scss/layouts/header";
+@import "../scss/layouts/footer";
+@import "../scss/layouts/sections";
+@import "../scss/layouts/modal";
+
+@import "../scss/sections/intro";
+@import "../scss/sections/about";
+@import "../scss/sections/offer";
+@import "../scss/sections/projects";
+@import "../scss/sections/contacts";

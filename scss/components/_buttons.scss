@@ -1,0 +1,38 @@
+.button {
+    display: inline-block;
+    position: relative;
+    font-size: $default-font-size;
+    line-height: $default-font-size;
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    outline: none;
+    height: 43px;
+    min-width: 150px;
+    padding: 12px 34px 12px 34px;
+    font-weight: bold;
+    text-align: center;
+    color: $white-color;
+    transition: .5s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+        transform: translate(1px,-1px);
+    }
+}
+
+.button_outlined {
+    background-color: transparent;
+
+    &:hover {
+        background-color: rgba($primary-color, .4);
+    }
+}
+
+.button_contained {
+    background-color: $primary-color;
+
+    &:hover {
+       background-color: rgba($primary-color, .2);
+    }
+}

@@ -1,0 +1,60 @@
+.offer {
+    &__row {
+        margin-top: 20px;
+        @include flexRowWrap;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: calc(33% - 10px);
+        border: 2px solid $primary-color;
+        border-radius: 8px;
+        transition: $mid-transition;
+        padding: 50px 20px 20px;
+        text-align: center;
+        box-sizing: border-box;
+
+        &:nth-child(even) {
+            border: 2px solid $white-color;
+        }
+
+        &:hover {
+            transform: scale(101%, 101%);
+            border: 2px solid $primary-color;
+            background-color: rgba($primary-color, .5);
+        }
+    }
+
+    &__title {
+        font-size: $pre-mid-font-size;
+        font-weight: bold;
+        line-height: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+
+    &__img {
+        width: 50px;
+        height: auto;
+    }
+
+    @include respond (tab-port-sm) {
+      &__title {
+        font-size: $default-font-size;
+      }
+    }
+
+
+    @include respond(phone) {
+        &__card {
+            width: 100%;
+            margin-bottom: 10px;
+            padding-top: 40px;
+        }
+
+        &__title {
+            font-size: $pre-mid-font-size;
+          }
+    }
+}

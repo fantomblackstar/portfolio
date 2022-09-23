@@ -1,0 +1,134 @@
+.intro {
+    height: calc(100vh);
+    position: relative;
+    max-height: 700px;
+
+    &__body {
+        height: calc(100% - 150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__footer {
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $dark-color;
+        z-index: 3;
+    }
+
+    &__content {
+        width: 50%;
+        text-align: left;
+    }
+
+    &__title {
+        font-size: $mid-font-size;
+    }
+
+    &__name {
+        font-size: $big-font-size;
+        line-height: 80px;
+    }
+
+    &__navigation {
+        width: 350px;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button_contained {
+        margin-right: 5px;
+    }
+
+    @include respond (tab-port) {
+        &__name {
+            font-size: $mid-font-size;
+            line-height: 50px;
+        }
+    }
+
+    @include respond (tab-port-sm) {
+        &__navigation {
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @include respond (phone) {
+        height: 50vh;
+
+        &__body {
+            height: calc(100% - 100px);
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        & .button {
+            width: 50%;
+        }
+
+        &__footer {
+            height: 100px;
+        }
+    }
+
+    @include respond(phone-xs) {
+
+        height: calc(100vh - 80px);
+
+        &__navigation {
+            flex-wrap: wrap;
+        }
+
+        .button {
+            margin-bottom: 10px;
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+}
+
+.intro-photo {
+    position: absolute;
+    bottom: -120px;
+    right: 0;
+    width: 486px;
+    height: 486px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    z-index: 1;
+
+    &__img {
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @include respond (tab-land) {
+        width: 350px;
+        height: 350px;
+        bottom: -50px;
+        right: 0;
+    }
+
+    @include respond (tab-port-sm) {
+        right: -100px;
+    }
+
+    @include respond(phone) {
+        display: none;
+    }
+}

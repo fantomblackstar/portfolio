@@ -1,0 +1,112 @@
+.projects {
+    position: relative;
+
+    &__row {
+        @include flexRowWrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__card {
+        position: relative;
+        width: calc(33% - 10px);
+        min-height: 250px;
+        border-radius: 8px;
+        transition: $mid-transition;
+        padding: 20px;
+        padding-bottom: 60px;
+        text-align: justify;
+        box-sizing: border-box;
+        background-color: $dark-grey-color;
+        margin-bottom: 20px;
+
+        &:hover .back-img-priority:before {
+            background-color: transparent;
+        }
+    }
+
+    &__controll {
+        @include flexRowWrap;
+        position: absolute;
+        justify-content: space-between;
+        left: 0px;
+        bottom: 0;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    &__name {
+        font-size: $pre-mid-font-size;
+        font-weight: bold;
+        line-height: 2rem;
+        color: $primary-color;
+        text-align: left;
+    }
+
+    &__subtitle {
+        margin: 10px 0px 20px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    & .button {
+        width: calc(50% - 5px);
+        min-width: auto;
+        font-size: $default-font-size;
+        padding: 12px 5px;
+    }
+
+    &__show-more {
+        display: block;
+        width: 150px !important;
+        margin: 10px auto 0px;
+    }
+
+    @include respond(tab-port) {
+        &__card {
+            width: calc(33% - 5px);
+            margin-bottom: 15px;
+            padding-bottom: 140px;
+        }
+
+        & .button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &__img {
+            height: 170px;
+        }
+
+        &__subtitle {
+            margin: 5px 0px;
+        }
+    }
+
+    @include respond(tab-port-sm) {
+        &__card {
+            width: calc(50% - 5px);
+        }
+    }
+
+    @include respond(phone) {
+        &__card {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &__show-more {
+            display: block;
+        }
+
+        &__img {
+            width: 100%;
+            margin: 0px auto 10px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 100px;
+    height: auto;
+    position: relative;
+
+    &__about-describer {
+        @include flexRowWrap;
+        justify-content: space-between;
+    }
+
+    &::before {
+        @include pseudoElement;
+        width: calc(100% - 30px);
+        height: 1px;
+        background-color: $low-priority-color;
+        top: -15px;
+        left: 15px;
+        border-radius: 2px;
+    }
+
+    @include respond(phone){
+        margin-top: 40px;
+        &__about-describer{
+            display: block;
+        }
+
+        &:before {
+            top: -10px;
+        }
+    }
+}

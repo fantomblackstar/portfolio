@@ -1,0 +1,144 @@
+.about {
+    position: relative;
+}
+
+.experience {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+
+    &__time {
+        font-size: 3rem;
+        color: $primary-color;
+        font-weight: bolder;
+        margin-right: 20px;
+    }
+
+    &__info {
+        text-align: justify;
+    }
+}
+
+// experience technology
+
+.exp-technology {
+    position: relative;
+    @include flexRowWrap;
+    justify-content: space-between;
+
+    &__card {
+        position: relative;
+        width: calc(25% - 10px);
+        height: 250px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 8px;
+
+        :nth-last-child(n+3) {
+            margin-right: 0px;
+        }
+
+        @include respond(tab-land) {
+            height: 200px;
+        }
+    }
+
+    &__name {
+        font-size: $mid-font-size;
+        line-height: 2rem;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        transition: $mid-transition;
+    }
+
+    &__back-img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+
+    &__back-img_small {
+        @include centerAbsolute;
+        width: auto;
+        height: 50%;
+        top: 60%;
+        z-index: 2;
+        transition: $mid-transition;
+    }
+
+    &__card:hover &__back-img {
+        transform: scale(105%, 105%);
+    }
+
+    &__card:hover &__back-img_small {
+        height: 55%;
+    }
+
+    &__card:hover &__name {
+        color: $dark-color;
+    }
+
+    @include respond (tab-port) {
+        &__name {
+            font-size: $default-font-size;
+        }
+    }
+
+    @include respond (tab-port-sm) {
+        &__card {
+            height: 170px;
+        }
+    }
+
+    @include respond (phone) {
+        &__card {
+            width: calc(50% - 5px);
+            margin: 0px 10px 10px 0px;
+        }
+
+        &__card:nth-child(even) {
+            margin-right: 0px;
+        }
+
+        &__name {
+            font-size: 1.2rem;
+            color: $dark-color;
+        }
+    }
+}
+
+#react-logo-white {
+    transition: $mid-transition;
+
+    &::before {
+        @include pseudoElement;
+        background-color: rgba($low-priority-color, 0.5);
+        z-index: 3;
+        transition: 0.3s ease;
+    }
+
+    &:hover:before {
+        background-color: transparent;
+    }
+
+    &:after {
+        @include pseudoElement;
+        background-color: $white-color;
+        z-index: 1;
+
+        @include respond(phone) {
+            background-color: rgba($white-color, .8);
+        }
+    }
+
+    @include respond(phone) {
+        &::before {
+            background-color: transparent;
+        }
+    }
+}
