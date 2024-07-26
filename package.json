@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "type": "module",
+  "homepage": "https://fantomblackstar.github.io/Portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -25,7 +26,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint src/* --fix",
-    "format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc.json"
+    "format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc.json",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -48,6 +51,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "gh-pages": "^6.1.1",
     "globals": "^15.6.0",
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
