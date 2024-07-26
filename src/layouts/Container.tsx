@@ -1,12 +1,8 @@
-import React, { HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+import React, { HTMLAttributes } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 const Container: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
-  return (
-    <div className={twMerge("container px-4 mx-auto", props.className)}>
-      {props.children}
-    </div>
-  );
+  return <div className={twMerge('container mx-auto px-5', props.className)}>{props.children}</div>;
 };
 
 export default Container;

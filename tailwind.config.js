@@ -28,6 +28,20 @@ export default {
       backgroundImage: {
         'gradient-primary': ' bg-gradient-to-r from-cyan-500 to-blue-500',
       },
+      keyframes: {
+        'loop-slider-l': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'loop-slider-r': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
+      animation: {
+        'loop-slider-l': 'loop-slider-l 50s linear infinite',
+        'loop-slider-r': 'loop-slider-r 50s linear infinite',
+      },
     },
   },
   plugins: [],

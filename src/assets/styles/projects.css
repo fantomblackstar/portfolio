@@ -1,0 +1,33 @@
+.bg-habits {
+  background-image: url('../images/habits.jpg');
+}
+
+.bg-memory-cards {
+  background-image: url('../images/memory-cards.png');
+}
+
+.bg-password-generator {
+  background-image: url('../images/password-generator.png');
+}
+
+.bg-pig-game {
+  background-image: url('../images/pig-game.png');
+}
+
+.bg-tonatos-studio {
+  background-image: url('../images/tonatos-studio.png');
+}
+
+.bg-text-converter {
+  background-image: url('../images/text-converter.png');
+}
+
+.bg-habits,
+.bg-memory-cards,
+.bg-password-generator,
+.bg-pig-game,
+.bg-tonatos-studio,
+.bg-text-converter {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
