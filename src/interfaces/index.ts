@@ -24,3 +24,9 @@ export interface ExperienceCompany {
   endPeriod?: string;
   description: string;
 }
+
+export enum AnimatedDirection {
+  BOTTOM = 'BOTTOM',
+  LEFT = 'LEFT',
+  RIGHT = 'RIGHT',
+}

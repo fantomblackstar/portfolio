@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Intro from './blocks/Intro';
 import PageLayout from './layouts/PageLayout';
@@ -7,6 +7,10 @@ import Experience from './blocks/Experience';
 import Projects from './blocks/Projects';
 
 function App() {
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, []);
+
   return (
     <PageLayout>
       <Intro />

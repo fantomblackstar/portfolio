@@ -5,7 +5,7 @@ export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   { href: '#about', title: 'About' },
   { href: '#experience', title: 'Experience' },
   { href: '#projects', title: 'Projects' },
-  { href: '#Contact', title: 'Contact' },
+  // { href: '#contact', title: 'Contact' },
 ];
 
 export const TECH_IMG_ITEMS: TechImgItem[] = [
@@ -63,15 +63,16 @@ export const EXPERIENCE_COMPANIES: ExperienceCompany[] = [
   {
     description: `As a Middle Frontend Developer at DarlySolutions I have been working on a medicine
             healthcare project. Colaborating with big team that includes me, 4 developers, project
-            manager and CTO. Worked on creating new pages and layouts, team communication, PR
-            reviews`,
+            manager and CTO. Worked on creating new pages and layouts, team communication and PR
+            reviews.`,
     startPeriod: '2024.04.22',
     endPeriod: '2024.06.12',
-    title: ' Middle Frontend Developer at DarlySolutions',
+    title: 'Middle Frontend Developer at DarlySolutions',
   },
   {
-    description:
-      'During my tenure at Appexoft, I held the role of React Developer, where I develop projects with any level from Landing Page to Big Single Page Aplications.',
+    description: `As a Strong Junior React Developer at Appexoft, I was responsible for developing and implementing new pages and features for web applications, ensuring they were user-friendly, 
+    responsive, and met client requirements. I identified and resolved bugs in stable projects, maintaining high performance and reliability of the applications. My role included creating new API
+     queries and developing models for the database, facilitating seamless data integration and management.`,
     startPeriod: '2022.09.12',
     endPeriod: '2024.04.19',
     title: 'Junior/Junior+ React Developer at Appexoft',

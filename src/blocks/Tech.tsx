@@ -3,30 +3,61 @@ import Container from '../layouts/Container';
 import SectionTitle from '../components/SectionTitle';
 import { TECH_IMG_ITEMS, TECH_NAMES_ROW_1, TECH_NAMES_ROW_2 } from '../constants';
 import { twMerge } from 'tailwind-merge';
+import { motion, Variant } from 'framer-motion';
+import AnimatedBlock from '../components/AnimatedBlock';
+import { AnimatedDirection } from '../interfaces';
+
+const TECH_VISIBLE_VARIANT: Variant = {
+  transition: {
+    duration: 0.5,
+    delayChildren: 0.3,
+    staggerChildren: 0.2,
+  },
+};
 
 const Tech: React.FC = () => {
   return (
-    <section id="technologies" className="mb-20 lg:mb-[10rem]">
+    <section id="technologies" className="mb-20 scroll-mt-20 lg:mb-[10rem]">
       <Container>
-        <SectionTitle title="Experience with" className="text-yellow-400" />
-        <div className="mb-10 flex flex-wrap justify-between gap-5">
+        <AnimatedBlock direction={AnimatedDirection.BOTTOM} delayMs={0}>
+          <SectionTitle title="Experience with" className="text-yellow-400" />
+        </AnimatedBlock>
+        <AnimatedBlock
+          className="mb-10 flex flex-nowrap justify-between gap-5 overflow-visible"
+          delayMs={0}
+          direction={AnimatedDirection.BOTTOM}
+          visibleVariant={TECH_VISIBLE_VARIANT}
+        >
           {TECH_IMG_ITEMS.map((elem, index) => (
-            <img
+            <motion.img
               key={`TechImg ${index}`}
               src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${elem.src}`}
               title={elem.title}
               alt={elem.title}
-              className={twMerge('inline-block size-10 md:size-20', elem.className)}
+              className={twMerge(
+                'inline-block size-10 duration-150 ease-linear hover:-translate-y-2 md:size-20',
+                elem.className,
+              )}
+              whileHover={{ scale: 1.1, rotate: 45 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -45,
+                borderRadius: '100%',
+              }}
+              variants={{
+                hidden: { y: 10, opacity: 0 },
+                visible: { y: 0, opacity: 1 },
+              }}
             />
           ))}
-        </div>
+        </AnimatedBlock>
         <div className="overflow-hidden whitespace-nowrap text-base text-secondary md:text-lg xl:text-xl">
-          <ul className="animate-loop-slider-l flex gap-5">
+          <ul className="flex animate-loop-slider-l gap-5">
             {TECH_NAMES_ROW_1.concat(TECH_NAMES_ROW_1).map((elem, index) => (
               <li key={`TechNamesRow1_${index}`}>{elem}</li>
             ))}
           </ul>
-          <ul className="animate-loop-slider-r flex gap-5">
+          <ul className="flex animate-loop-slider-r gap-5">
             {TECH_NAMES_ROW_2.concat(TECH_NAMES_ROW_2).map((elem, index) => (
               <li key={`TechNamesRow2_${index}`}>{elem}</li>
             ))}

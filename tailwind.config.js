@@ -42,6 +42,16 @@ export default {
         'loop-slider-l': 'loop-slider-l 50s linear infinite',
         'loop-slider-r': 'loop-slider-r 50s linear infinite',
       },
+      container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+          sm: '100%',
+          md: '100%',
+          lg: '900px',
+          xl: '1100px',
+        },
+      },
     },
   },
   plugins: [],
