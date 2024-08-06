@@ -8,7 +8,7 @@ import AnimatedBlock from '../components/AnimatedBlock';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="mb-20 scroll-mt-20 lg:mb-[10rem]">
+    <section id="experience" className="mb-20 scroll-mt-24 overflow-clip lg:mb-[10rem]">
       <Container>
         <AnimatedBlock direction={AnimatedDirection.BOTTOM} delayMs={0}>
           <SectionTitle title="Work experience" className="text-blue-600" />

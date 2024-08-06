@@ -23,7 +23,7 @@ const Tech: React.FC = () => {
           <SectionTitle title="Experience with" className="text-yellow-400" />
         </AnimatedBlock>
         <AnimatedBlock
-          className="mb-10 flex flex-nowrap justify-between gap-5 overflow-visible"
+          className="mb-1 flex flex-nowrap justify-between gap-5 overflow-hidden py-3 md:mb-7"
           delayMs={0}
           direction={AnimatedDirection.BOTTOM}
           visibleVariant={TECH_VISIBLE_VARIANT}
@@ -35,15 +35,10 @@ const Tech: React.FC = () => {
               title={elem.title}
               alt={elem.title}
               className={twMerge(
-                'inline-block size-10 duration-150 ease-linear hover:-translate-y-2 md:size-20',
+                'inline-block size-10 duration-150 ease-linear hover:translate-y-2 md:size-20',
                 elem.className,
               )}
-              whileHover={{ scale: 1.1, rotate: 45 }}
-              whileTap={{
-                scale: 0.8,
-                rotate: -45,
-                borderRadius: '100%',
-              }}
+              whileHover={{ scale: 1.2 }}
               variants={{
                 hidden: { y: 10, opacity: 0 },
                 visible: { y: 0, opacity: 1 },

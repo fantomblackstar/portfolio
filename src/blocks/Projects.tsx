@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from '../layouts/Container';
 import { PROJECTS_ITEMS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
@@ -7,8 +7,15 @@ import AnimatedBlock from '../components/AnimatedBlock';
 import { AnimatedDirection } from '../interfaces';
 
 const Projects: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width:767px)');
+    if (media.matches) setIsMobile(true);
+  });
+
   return (
-    <section className="scroll-mt-20 pb-24" id="projects">
+    <section className="scroll-mt-24 overflow-clip pb-24" id="projects">
       <Container>
         <AnimatedBlock direction={AnimatedDirection.BOTTOM} delayMs={0}>
           <SectionTitle
@@ -22,7 +29,7 @@ const Projects: React.FC = () => {
               key={`ProjectItem ${index}`}
               direction={index % 2 ? AnimatedDirection.RIGHT : AnimatedDirection.LEFT}
               className="w-full md:w-[calc((100%-12px)/2)] lg:w-[calc((100%-20px)/2)]"
-              delayMs={1000}
+              delayMs={isMobile ? 0 : 500}
             >
               <ProjectCard {...project} />
             </AnimatedBlock>
