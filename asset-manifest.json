@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.fcf2c17a.css",
-    "main.js": "/Portfolio/static/js/main.949f8cd5.js",
+    "main.css": "/Portfolio/static/css/main.40bc0ff1.css",
+    "main.js": "/Portfolio/static/js/main.6d720425.js",
     "static/media/tonatos-studio.png": "/Portfolio/static/media/tonatos-studio.d22906705247e1c06e8a.png",
     "static/media/profile_photo.jpg": "/Portfolio/static/media/profile_photo.a10c7889974e392b97b0.jpg",
     "static/media/habits.jpg": "/Portfolio/static/media/habits.7794f2f8f191b21945e0.jpg",
@@ -10,11 +10,11 @@
     "static/media/pig-game.png": "/Portfolio/static/media/pig-game.22089bf4d4f5c5f0e142.png",
     "static/media/text-converter.png": "/Portfolio/static/media/text-converter.7fe33f1fa1ae694d488c.png",
     "index.html": "/Portfolio/index.html",
-    "main.fcf2c17a.css.map": "/Portfolio/static/css/main.fcf2c17a.css.map",
-    "main.949f8cd5.js.map": "/Portfolio/static/js/main.949f8cd5.js.map"
+    "main.40bc0ff1.css.map": "/Portfolio/static/css/main.40bc0ff1.css.map",
+    "main.6d720425.js.map": "/Portfolio/static/js/main.6d720425.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcf2c17a.css",
-    "static/js/main.949f8cd5.js"
+    "static/css/main.40bc0ff1.css",
+    "static/js/main.6d720425.js"
   ]
 }
