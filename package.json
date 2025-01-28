@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
-  "homepage": "https://fantomblackstar.github.io/Portfolio/",
+  "homepage": "https://fantomblackstar.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
