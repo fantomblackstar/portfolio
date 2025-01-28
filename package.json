@@ -64,5 +64,6 @@
   },
   "main": "index.js",
   "author": "fantomblackstar <mr.bravespirit@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@4.6.0"
 }
