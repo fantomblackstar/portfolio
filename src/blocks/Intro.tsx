@@ -44,7 +44,7 @@ const Intro: React.FC = () => {
           </a>
           <a
             className="w-full rounded-xl border px-7 py-3 duration-200 hover:bg-white/90 hover:text-black md:w-auto md:py-4"
-            href={process.env.REACT_APP_PDF_CV_LINK}
+            href={import.meta.env.VITE_PDF_CV_LINK}
             target="_blank"
             download
           >
