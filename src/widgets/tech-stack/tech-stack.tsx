@@ -12,7 +12,7 @@ const TECH_VISIBLE_VARIANT: Variant = {
 
 const TechStack: React.FC = () => {
   return (
-    <section id="technologies" className="mb-20 scroll-mt-20 lg:mb-[10rem]">
+    <section id="technologies" className="scroll-mt-20 py-20 lg:py-[10rem]">
       <Container>
         <AnimatedBlock direction={AnimatedDirection.BOTTOM} delayMs={0}>
           <SectionTitle title="Experience with" className="text-yellow-400" />
