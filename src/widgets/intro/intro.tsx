@@ -1,10 +1,9 @@
 import React from 'react';
-import ProfilePhoto from '../assets/images/profile_photo.jpg';
-import Container from '../layouts/Container';
+import ProfilePhoto from '@/shared/assets/images/profile_photo.jpg';
 
-import AnimatedBlock from '../components/AnimatedBlock';
-import { AnimatedDirection } from '../interfaces';
-import { AuroraBackground } from '@/components/ui/aurora-background';
+import { AnimatedBlock, AnimatedDirection } from '@/shared/ui/animated-block';
+import { AuroraBackground } from '@/shared/ui/aurora-background';
+import Container from '@/shared/ui/layout/container';
 
 const Intro: React.FC = () => {
   return (
@@ -61,4 +60,4 @@ const Intro: React.FC = () => {
   );
 };
 
-export default Intro;
+export { Intro };

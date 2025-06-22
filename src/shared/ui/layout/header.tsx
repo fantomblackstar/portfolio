@@ -1,12 +1,21 @@
+import { useOutsideClick } from '@/shared/lib/use-outside-click';
 import React, { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
+import Container from './container';
+import { BurgerIcon } from '@/shared/assets/icons';
 
-import { BurgerIcon } from '../assets/icons';
-import { HEADER_NAV_ITEMS } from '../constants';
-import { useOutsideClick } from '../hooks/useOutsideClick';
-import Container from './Container';
-import { HeaderNavItem } from '../interfaces/layouts';
-import ProgressIndicator from '../components/ProgressIndicator';
+import { ProgressIndicator } from '../progress-indicator';
+
+export interface HeaderNavItem {
+  href: string;
+  title: string;
+}
+
+export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
+  { href: '#about', title: 'About' },
+  { href: '#experience', title: 'Experience' },
+  { href: '#projects', title: 'Projects' },
+];
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,4 +64,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export { Header };

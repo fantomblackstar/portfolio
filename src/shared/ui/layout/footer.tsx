@@ -1,7 +1,6 @@
 import React from 'react';
-import Container from './Container';
-import SocialMedia from '../components/SocialMedia';
-import AnimatedBlock from '../components/AnimatedBlock';
+import Container from './container';
+import { SocialMedia } from '../social-media';
 
 const Footer = () => {
   return (
@@ -14,4 +13,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export { Footer };

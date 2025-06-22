@@ -1,7 +1,12 @@
 import React, { ReactNode, useEffect } from 'react';
 import { motion, useAnimation, Variant } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { AnimatedDirection } from '../interfaces';
+
+export enum AnimatedDirection {
+  BOTTOM = 'BOTTOM',
+  LEFT = 'LEFT',
+  RIGHT = 'RIGHT',
+}
 
 interface AnimatedBlockProps {
   children?: ReactNode;
@@ -37,13 +42,7 @@ const AnimatedBlock: React.FC<AnimatedBlockProps> = ({
   const hiddenY = direction === AnimatedDirection.BOTTOM ? 100 : 0;
 
   const variants = {
-    hidden: {
-      opacity: 0,
-      y: hiddenY,
-      x: hiddenX,
-      scale: 0.9,
-      ...hiddenVariant,
-    },
+    hidden: { opacity: 0, y: hiddenY, x: hiddenX, scale: 0.9, ...hiddenVariant },
     visible: {
       opacity: 1,
       y: 0,
@@ -67,4 +66,4 @@ const AnimatedBlock: React.FC<AnimatedBlockProps> = ({
   );
 };
 
-export default AnimatedBlock;
+export { AnimatedBlock };

@@ -1,21 +1,16 @@
 import React from 'react';
-import Container from '../layouts/Container';
-import SectionTitle from '../components/SectionTitle';
-import { TECH_IMG_ITEMS, TECH_NAMES_ROW_1, TECH_NAMES_ROW_2 } from '../constants';
 import { twMerge } from 'tailwind-merge';
 import { motion, Variant } from 'framer-motion';
-import AnimatedBlock from '../components/AnimatedBlock';
-import { AnimatedDirection } from '../interfaces';
+import { AnimatedBlock, AnimatedDirection } from '../../shared/ui/animated-block';
+import Container from '@/shared/ui/layout/container';
+import { SectionTitle } from '@/shared/ui/section-title';
+import { TECH_IMG_ITEMS, TECH_NAMES_ROW_1, TECH_NAMES_ROW_2 } from './lib/constants';
 
 const TECH_VISIBLE_VARIANT: Variant = {
-  transition: {
-    duration: 0.5,
-    delayChildren: 0.3,
-    staggerChildren: 0.2,
-  },
+  transition: { duration: 0.5, delayChildren: 0.3, staggerChildren: 0.2 },
 };
 
-const Tech: React.FC = () => {
+const TechStack: React.FC = () => {
   return (
     <section id="technologies" className="mb-20 scroll-mt-20 lg:mb-[10rem]">
       <Container>
@@ -39,10 +34,7 @@ const Tech: React.FC = () => {
                 elem.className,
               )}
               whileHover={{ scale: 1.2 }}
-              variants={{
-                hidden: { y: 10, opacity: 0 },
-                visible: { y: 0, opacity: 1 },
-              }}
+              variants={{ hidden: { y: 10, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
             />
           ))}
         </AnimatedBlock>
@@ -63,4 +55,4 @@ const Tech: React.FC = () => {
   );
 };
 
-export default Tech;
+export { TechStack };

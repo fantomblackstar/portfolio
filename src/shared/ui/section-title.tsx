@@ -19,4 +19,4 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ className, title }) => {
   );
 };
 
-export default SectionTitle;
+export { SectionTitle };

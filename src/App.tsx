@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
-
-import Intro from './blocks/Intro';
-import PageLayout from './layouts/PageLayout';
-import Tech from './blocks/Tech';
-import Experience from './blocks/Experience';
-import Projects from './blocks/Projects';
+import { PageLayout } from '@/shared/ui/layout';
+import { Intro } from '@/widgets/intro';
+import { TechStack } from '@/widgets/tech-stack';
 
 function App() {
   useEffect(() => {
@@ -14,9 +11,7 @@ function App() {
   return (
     <PageLayout>
       <Intro />
-      <Tech />
-      <Experience />
-      <Projects />
+      <TechStack />
     </PageLayout>
   );
 }

@@ -23,4 +23,4 @@ const SocialMedia: React.FC = () => {
   );
 };
 
-export default SocialMedia;
+export { SocialMedia };
