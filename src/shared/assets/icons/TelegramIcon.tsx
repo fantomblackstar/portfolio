@@ -1,4 +1,4 @@
-import React, { SVGProps } from 'react';
+import { SVGProps } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 const TelegramIcon = (props: SVGProps<SVGSVGElement>) => {
