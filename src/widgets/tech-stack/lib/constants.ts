@@ -1,4 +1,4 @@
-import { TechImgItem } from '../models';
+import { TechImgItem } from '../model';
 
 export const TECH_IMG_ITEMS: TechImgItem[] = [
   { src: 'html5/html5-original.svg', title: 'HTML5' },
