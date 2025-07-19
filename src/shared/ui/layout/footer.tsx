@@ -1,5 +1,5 @@
-import Container from './container';
 import { SocialMedia } from '../social-media';
+import Container from './container';
 
 const Footer = () => {
   return (

@@ -20,6 +20,7 @@ export default [
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
       'no-console': ['error', { allow: ['warn', 'error'] }],
+      'react/react-in-jsx-scope': 'off',
     },
     settings: {
       react: {

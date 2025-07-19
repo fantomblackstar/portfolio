@@ -1,6 +1,8 @@
 import React from 'react';
+
+import { CardBody, CardContainer, CardItem } from '@/shared/ui/3d-card';
+
 import type { CompanyCard } from '../model';
-import { CardContainer, CardBody, CardItem } from '@/shared/ui/3d-card';
 
 interface CompanyCardProps extends CompanyCard {}
 
@@ -34,7 +36,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
             <a
               href={link}
               className="text-nowrap text-lg font-semibold text-white underline hover:text-blue-500 md:text-2xl"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               {name}
             </a>

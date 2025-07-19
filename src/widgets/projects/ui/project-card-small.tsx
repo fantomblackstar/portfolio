@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
+
 import { ProjectInfo } from '../model';
 
 interface ProjectCardSmallProps extends ProjectInfo {

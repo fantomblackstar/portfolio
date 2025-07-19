@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import React from 'react';
 
 const ProgressIndicator: React.FC = () => {
   const { scrollYProgress } = useScroll();

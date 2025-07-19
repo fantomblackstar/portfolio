@@ -1,9 +1,11 @@
+import { motion, Variant } from 'framer-motion';
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
-import { motion, Variant } from 'framer-motion';
-import { AnimatedBlock, AnimatedDirection } from '../../shared/ui/animated-block';
+
 import Container from '@/shared/ui/layout/container';
 import { SectionTitle } from '@/shared/ui/section-title';
+
+import { AnimatedBlock, AnimatedDirection } from '../../shared/ui/animated-block';
 import { TECH_IMG_ITEMS, TECH_NAMES_ROW_1, TECH_NAMES_ROW_2 } from './lib/constants';
 
 const TECH_VISIBLE_VARIANT: Variant = {

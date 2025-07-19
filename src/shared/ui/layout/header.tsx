@@ -1,10 +1,11 @@
-import { useOutsideClick } from '@/shared/lib/use-outside-click';
-import React, { useState, useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import { twMerge } from 'tailwind-merge';
-import Container from './container';
+
 import { BurgerIcon } from '@/shared/assets/icons';
+import { useOutsideClick } from '@/shared/lib/use-outside-click';
 
 import { ProgressIndicator } from '../progress-indicator';
+import Container from './container';
 
 export interface HeaderNavItem {
   href: string;

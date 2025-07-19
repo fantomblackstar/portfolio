@@ -1,9 +1,10 @@
 import React from 'react';
-import ProfilePhoto from '@/shared/assets/images/profile_photo.jpg';
 
+import ProfilePhoto from '@/shared/assets/images/profile_photo.jpg';
 import { AnimatedBlock, AnimatedDirection } from '@/shared/ui/animated-block';
 import { AuroraBackground } from '@/shared/ui/aurora-background';
 import Container from '@/shared/ui/layout/container';
+
 import { ActionButtons } from './action-buttons';
 import { IntroText } from './intro-text';
 

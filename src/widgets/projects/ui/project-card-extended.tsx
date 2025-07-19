@@ -1,6 +1,8 @@
-import { useOutsideClick } from '@/shared/lib';
 import { motion } from 'framer-motion';
 import { FC, useRef } from 'react';
+
+import { useOutsideClick } from '@/shared/lib';
+
 import { ProjectInfo } from '../model';
 
 interface ProjectCardExtendedProps {

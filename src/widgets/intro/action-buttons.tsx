@@ -16,7 +16,7 @@ const ActionButtons = () => {
         className="w-full rounded-xl border px-7 py-3 text-white duration-200 hover:bg-white/90 hover:text-black md:w-auto md:py-4"
         href={import.meta.env.VITE_PDF_CV_LINK}
         target="_blank"
-        download
+        download rel="noreferrer"
       >
         Download CV
       </a>

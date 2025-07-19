@@ -1,8 +1,8 @@
-import { ProjectInfo } from '../model';
-
-import LumitechLogo from '@/shared/assets/images/lumitech_fzco_logo.jpeg';
-import DarlyLogo from '@/shared/assets/images/darly_solutions_logo.jpeg';
 import AppexoftLogo from '@/shared/assets/images/appexoft_logo.jpeg';
+import DarlyLogo from '@/shared/assets/images/darly_solutions_logo.jpeg';
+import LumitechLogo from '@/shared/assets/images/lumitech_fzco_logo.jpeg';
+
+import { ProjectInfo } from '../model';
 
 export const cards: ProjectInfo[] = [
   {

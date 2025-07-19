@@ -1,6 +1,8 @@
 import { FC } from 'react';
-import { SectionTitle } from '@/shared/ui/section-title';
+
 import { AnimatedBlock, AnimatedDirection } from '@/shared/ui/animated-block';
+import { SectionTitle } from '@/shared/ui/section-title';
+
 import { ProjectCardsList } from './project-cards-list';
 
 const Projects: FC = () => {

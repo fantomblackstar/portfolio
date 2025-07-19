@@ -1,5 +1,5 @@
-import React, { ReactNode, useEffect } from 'react';
 import { motion, useAnimation, Variant } from 'framer-motion';
+import React, { ReactNode, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 export enum AnimatedDirection {

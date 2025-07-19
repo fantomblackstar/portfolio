@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
+
 import { PageLayout } from '@/shared/ui/layout';
-import { Intro } from '@/widgets/intro';
-import { TechStack } from '@/widgets/tech-stack';
 import { Companies } from '@/widgets/companies';
+import { Intro } from '@/widgets/intro';
 import { Projects } from '@/widgets/projects';
+import { TechStack } from '@/widgets/tech-stack';
 
 function App() {
   useEffect(() => {

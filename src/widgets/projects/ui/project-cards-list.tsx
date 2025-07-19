@@ -1,11 +1,12 @@
-import { FC, useState } from 'react';
-import { ProjectInfo } from '../model';
 import { AnimatePresence, motion } from 'framer-motion';
+import { FC, useState } from 'react';
 import { useEffect } from 'react';
-import { CloseIcon } from './close-icon';
-import { ProjectCardSmall } from './project-card-small';
-import { ProjectCardExtended } from './project-card-extended';
+
 import { cards } from '../lib/constants';
+import { ProjectInfo } from '../model';
+import { CloseIcon } from './close-icon';
+import { ProjectCardExtended } from './project-card-extended';
+import { ProjectCardSmall } from './project-card-small';
 
 const ProjectCardsList: FC = () => {
   const [active, setActive] = useState<ProjectInfo | boolean | null>(null);
