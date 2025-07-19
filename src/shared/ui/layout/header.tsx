@@ -1,4 +1,4 @@
-import React, { useRef,useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import { BurgerIcon } from '@/shared/assets/icons';
@@ -13,9 +13,9 @@ export interface HeaderNavItem {
 }
 
 export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
-  { href: '#about', title: 'About' },
   { href: '#companies', title: 'Companies' },
   { href: '#projects', title: 'Projects' },
+  { href: '#references', title: 'References' },
 ];
 
 const Header: React.FC = () => {
