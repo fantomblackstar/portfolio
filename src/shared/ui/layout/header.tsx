@@ -1,5 +1,5 @@
 import { useOutsideClick } from '@/shared/lib/use-outside-click';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 import Container from './container';
 import { BurgerIcon } from '@/shared/assets/icons';
@@ -13,13 +13,15 @@ export interface HeaderNavItem {
 
 export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
   { href: '#about', title: 'About' },
-  { href: '#experience', title: 'Experience' },
+  { href: '#companies', title: 'Companies' },
   { href: '#projects', title: 'Projects' },
 ];
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const mobileNavRef = useOutsideClick(() => setIsOpen(false));
+  const mobileNavRef = useRef<HTMLDivElement>(null);
+
+  useOutsideClick(mobileNavRef, () => setIsOpen(false));
 
   const toggleMenu = () => {
     setIsOpen((prevState) => !prevState);

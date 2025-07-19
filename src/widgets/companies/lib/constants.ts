@@ -1,7 +1,7 @@
 import type { CompanyCard } from '../model';
-import LumitechLogo from './lumitech_fzco_logo.jpeg';
-import DarlyLogo from './darly_solutions_logo.jpeg';
-import AppexoftLogo from './appexoft_logo.jpeg';
+import LumitechLogo from '@/shared/assets/images/lumitech_fzco_logo.jpeg';
+import DarlyLogo from '@/shared/assets/images/darly_solutions_logo.jpeg';
+import AppexoftLogo from '@/shared/assets/images/appexoft_logo.jpeg';
 
 export const COMPANIES_INFO: CompanyCard[] = [
   {

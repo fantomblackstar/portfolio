@@ -16,7 +16,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
   return (
     <CardContainer
       containerClassName="p-0"
-      className="group relative rounded-2xl border border-zinc-800 bg-zinc-800/90 p-6 shadow-md transition-all duration-300 hover:bg-zinc-700 hover:shadow-lg md:px-10"
+      className="hover:bg-card-hover group relative rounded-2xl bg-card p-6 shadow-md transition-all duration-300 hover:shadow-lg"
     >
       <CardBody className="h-auto w-full">
         <div className="mb-4 flex w-full flex-wrap items-center justify-start gap-4 md:flex-row">
@@ -47,7 +47,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
             {startDate} - {endDate || 'Current'}
           </CardItem>
         </div>
-        <CardItem translateZ={40} className="text-justify text-zinc-300">
+        <CardItem translateZ={40} className="text-justify text-base text-tertiary lg:text-lg">
           {description}
         </CardItem>
       </CardBody>
