@@ -14,13 +14,13 @@ const Intro: React.FC = () => {
       <Container className="relative pt-10 lg:pt-20">
         <AnimatedBlock
           direction={AnimatedDirection.BOTTOM}
-          className="relative mx-auto mb-8 size-56 overflow-hidden rounded-full md:size-72 lg:size-96 xl:mb-12"
+          className="relative mx-auto mb-8 size-56 overflow-hidden rounded-full md:size-72 xl:mb-12 2xl:size-96"
           delayMs={500}
         >
           <img
             src={ProfilePhoto}
             alt="Profile_photo"
-            className="absolute -bottom-10 left-0 m-0 h-auto w-full md:-bottom-16"
+            className="absolute -bottom-10 left-0 m-0 h-auto w-full 2xl:-bottom-16"
           />
         </AnimatedBlock>
         <IntroText />

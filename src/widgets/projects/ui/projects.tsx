@@ -3,10 +3,11 @@ import { FC } from 'react';
 import {
   AnimatedBlock,
   AnimatedDirection,
-  SectionTitle,
-  SectionBlock,
   BackgroundGradientAnimation,
+  SectionBlock,
+  SectionTitle,
 } from '@/shared/ui';
+
 import { ProjectCardsList } from './project-cards-list';
 
 const Projects: FC = () => {

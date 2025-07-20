@@ -13,6 +13,7 @@ export interface HeaderNavItem {
 }
 
 export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
+  { href: '#technologies', title: 'Technologies' },
   { href: '#projects', title: 'Projects' },
   { href: '#companies', title: 'Companies' },
   { href: '#references', title: 'References' },
@@ -34,9 +35,9 @@ const Header: React.FC = () => {
         <div className="absolute left-4 top-1/2 z-30 -translate-y-1/2 bg-gradient-to-r from-orange-1 to-violet-1 bg-clip-text text-xl font-bold text-transparent md:text-3xl">
           VoloshynV
         </div>
-        <nav className="hidden text-xl text-primary md:flex md:space-x-8 xl:space-x-12">
+        <nav className="hidden text-xl text-primary md:flex md:space-x-8">
           {HEADER_NAV_ITEMS.map((navItem: HeaderNavItem, index: number) => (
-            <a key={`NavItem ${index}`} href={navItem.href} className="hover:text-secondary">
+            <a key={`NavItem ${index}`} href={navItem.href} className="hover:text-blue-700">
               {navItem.title}
             </a>
           ))}

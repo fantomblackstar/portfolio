@@ -1,4 +1,4 @@
-import { motion, useAnimation, Variant } from 'framer-motion';
+import { HTMLMotionProps, motion, useAnimation, Variant } from 'framer-motion';
 import React, { ReactNode, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -8,10 +8,10 @@ export enum AnimatedDirection {
   RIGHT = 'RIGHT',
 }
 
-interface AnimatedBlockProps {
+interface AnimatedBlockProps
+  extends Omit<HTMLMotionProps<'div'>, 'initial' | 'animate' | 'variants'> {
   children?: ReactNode;
   direction: AnimatedDirection;
-  className?: HTMLDivElement['className'];
   durationMs?: number;
   delayMs?: number;
   visibleVariant?: Variant;
@@ -21,11 +21,11 @@ interface AnimatedBlockProps {
 const AnimatedBlock: React.FC<AnimatedBlockProps> = ({
   children,
   direction,
-  className,
   durationMs = 700,
-  delayMs = 500,
+  delayMs = 400,
   hiddenVariant,
   visibleVariant,
+  ...motionProps
 }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -54,13 +54,7 @@ const AnimatedBlock: React.FC<AnimatedBlockProps> = ({
   };
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={variants}
-      className={className}
-    >
+    <motion.div ref={ref} initial="hidden" animate={controls} variants={variants} {...motionProps}>
       {children}
     </motion.div>
   );

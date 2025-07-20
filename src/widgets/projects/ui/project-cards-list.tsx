@@ -77,11 +77,12 @@ const ProjectCardsList: FC = () => {
         ) : null}
       </AnimatePresence>
       <ul className="mx-auto w-full space-y-4 lg:space-y-6">
-        {cards.map((card) => (
+        {cards.map((card, index) => (
           <ProjectCardSmall
             key={`card-${card.title}-${card.id}`}
             {...card}
             onCardClick={onCardClick}
+            index={index}
           />
         ))}
       </ul>

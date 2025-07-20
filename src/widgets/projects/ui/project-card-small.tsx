@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
 
+import { AnimatedBlock, AnimatedDirection } from '@/shared/ui';
+
 import { ProjectInfo } from '../model';
 
 interface ProjectCardSmallProps extends ProjectInfo {
   onCardClick: (id: number) => void;
+  index: number;
 }
 
 export const ProjectCardSmall: FC<ProjectCardSmallProps> = ({
@@ -13,9 +16,11 @@ export const ProjectCardSmall: FC<ProjectCardSmallProps> = ({
   description,
   companyLogo,
   onCardClick,
+  index,
 }) => {
   return (
-    <motion.div
+    <AnimatedBlock
+      direction={index % 2 === 0 ? AnimatedDirection.RIGHT : AnimatedDirection.LEFT}
       layoutId={`card-${title}-${id}`}
       key={`card-${title}-${id}`}
       onClick={() => onCardClick(id)}
@@ -45,6 +50,6 @@ export const ProjectCardSmall: FC<ProjectCardSmallProps> = ({
       >
         View More
       </motion.button>
-    </motion.div>
+    </AnimatedBlock>
   );
 };

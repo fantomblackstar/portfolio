@@ -1,4 +1,5 @@
 import { GithubIcon, GmailIcon, LinkedInIcon, TelegramIcon } from '@/shared/assets/icons';
+
 import Container from './container';
 
 const socialLinks = [

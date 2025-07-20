@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { TechItem } from '../lib/tech-categories';
 
 interface TechCategoryCardProps {

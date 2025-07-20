@@ -12,14 +12,17 @@ export const References: FC = () => {
   return (
     <SectionBlock className="bg-gray-900" id="references">
       <div className="container mx-auto">
-        <AnimatedBlock direction={AnimatedDirection.BOTTOM} delayMs={100}>
+        <AnimatedBlock direction={AnimatedDirection.BOTTOM}>
           <SectionTitle title="References" className="text-purple-600" />
         </AnimatedBlock>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <AnimatedBlock
+          direction={AnimatedDirection.BOTTOM}
+          className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
           {referencesData.map((reference: Reference) => (
             <ReferenceCard key={reference.id} {...reference} />
           ))}
-        </div>
+        </AnimatedBlock>
       </div>
     </SectionBlock>
   );

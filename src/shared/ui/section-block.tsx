@@ -1,6 +1,8 @@
+import { HTMLAttributes } from 'react';
+
 import { cn } from '@/shared/lib';
 
-interface SectionBlockProps extends React.HTMLAttributes<HTMLDivElement> {
+interface SectionBlockProps extends HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
 

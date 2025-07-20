@@ -1,10 +1,10 @@
+import { SectionBlock } from '@/shared/ui';
 import { AnimatedBlock, AnimatedDirection } from '@/shared/ui/animated-block';
 import Container from '@/shared/ui/layout/container';
 import { SectionTitle } from '@/shared/ui/section-title';
 
 import { COMPANIES_INFO } from '../lib/constants';
 import { CompanyCard } from './company-card';
-import { SectionBlock } from '@/shared/ui';
 
 const Companies = () => {
   return (
