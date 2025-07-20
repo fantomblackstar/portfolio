@@ -13,9 +13,9 @@ const IntroText = () => {
         </span>
       </h1>
       <h3 className="text-lg font-normal text-secondary md:w-[35rem] md:text-xl">
-        I’m a qualified and professional front-end web developer with strong experience in creating
-        websites. Good creative and analytical skills, team player with an eye for details. Open to
-        new challenges where I can create beautiful results.
+        I'm fullstack developer who turns ambitious ideas into reality. With 4+ years of creating
+        high-performance web applications, I specialize in React.js ecosystems and scalable
+        solutions. Let's turn your ideas into success!
       </h3>
     </AnimatedBlock>
   );

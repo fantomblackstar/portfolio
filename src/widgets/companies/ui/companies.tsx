@@ -4,10 +4,11 @@ import { SectionTitle } from '@/shared/ui/section-title';
 
 import { COMPANIES_INFO } from '../lib/constants';
 import { CompanyCard } from './company-card';
+import { SectionBlock } from '@/shared/ui';
 
 const Companies = () => {
   return (
-    <section id="companies" className="scroll-mt-20 pb-20 lg:pb-[10rem]">
+    <SectionBlock id="companies">
       <Container>
         <AnimatedBlock direction={AnimatedDirection.BOTTOM} delayMs={0}>
           <SectionTitle title="Companies" className="text-blue-600" />
@@ -18,7 +19,7 @@ const Companies = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </SectionBlock>
   );
 };
 

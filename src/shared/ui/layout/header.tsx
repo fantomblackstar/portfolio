@@ -13,8 +13,8 @@ export interface HeaderNavItem {
 }
 
 export const HEADER_NAV_ITEMS: HeaderNavItem[] = [
-  { href: '#companies', title: 'Companies' },
   { href: '#projects', title: 'Projects' },
+  { href: '#companies', title: 'Companies' },
   { href: '#references', title: 'References' },
 ];
 

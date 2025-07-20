@@ -16,10 +16,9 @@ function App() {
     <PageLayout>
       <Intro />
       <TechStack />
-      <Companies />
       <Projects />
+      <Companies />
       <References />
-      <p className="py-10 text-center text-zinc-400">More blocks are coming soon...</p>
     </PageLayout>
   );
 }

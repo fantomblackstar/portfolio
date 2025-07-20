@@ -17,4 +17,4 @@ const TelegramIcon = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export default TelegramIcon;
+export { TelegramIcon };

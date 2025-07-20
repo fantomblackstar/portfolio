@@ -7,4 +7,3 @@ export * from './layout';
 export * from './progress-indicator';
 export * from './section-block';
 export * from './section-title';
-export * from './social-media';
