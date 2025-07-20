@@ -39,6 +39,7 @@ export const cards: ProjectInfo[] = [
     achievements: [
       'Implemented safety map feature by providing real-time data and enhanced metrics on the map',
       'Developed full dynamic app from scratch using reusable blocks with full control from Directus CMS',
+      'Engineered a scalable solution for generating complex PDF documents from extensive survey data',
     ],
   },
   {

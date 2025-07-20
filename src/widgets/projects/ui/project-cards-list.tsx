@@ -76,7 +76,7 @@ const ProjectCardsList: FC = () => {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="mx-auto w-full gap-4 space-y-4">
+      <ul className="mx-auto w-full space-y-4 lg:space-y-6">
         {cards.map((card) => (
           <ProjectCardSmall
             key={`card-${card.title}-${card.id}`}
