@@ -1,1 +1,1 @@
-export { TechStack } from './tech-stack';
+export { TechStack } from './ui/tech-stack';
