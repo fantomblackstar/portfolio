@@ -24,6 +24,8 @@ jobs:
       
       - name: Build
         run: npm run build
+        env:
+          VITE_PDF_CV_LINK: ${{ secrets.VITE_PDF_CV_LINK }}
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
