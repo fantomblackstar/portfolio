@@ -19,7 +19,7 @@ const ActionButtons = () => {
         download
         rel="noreferrer"
       >
-        Download CV
+        Download Resume
       </a>
     </AnimatedBlock>
   );

@@ -12,12 +12,7 @@ export const COMPANIES_INFO: CompanyCard[] = [
     startDate: 'Aug 2024',
     endDate: null,
     link: 'https://lumitech.co/',
-    description: `
-    Lumitech is a custom software development company.
-    Company is one of the fastest-growing software development companies based in the UAE, achieving 2x engineering growth in 2024 and ranked among Clutch's 100 fastest-growing software companies.
-    Focus is on building AI- and tech-driven development teams to help businesses increase operational efficiency and adapt to an AI-driven industry through custom software, which is now more accessible than ever.
-
-`,
+    description: `Lumitech is a custom software development company based in the UAE, achieving 2x engineering growth in 2024 and ranked among Clutch's 100 fastest-growing software development companies. Focus is on building AI- and tech-driven development teams to help businesses increase operational efficiency and adapt to an AI-driven industry through custom software.`,
   },
   {
     name: 'Darly Solutions',
@@ -31,12 +26,10 @@ export const COMPANIES_INFO: CompanyCard[] = [
   {
     name: 'Appexoft',
     logo: AppexoftLogo,
-    position: 'React Developer',
+    position: 'Full Stack Developer',
     startDate: 'Sep 2021',
     endDate: 'Apr 2024',
     link: 'https://appexoft.com/',
-    description: `The company to turn into reality what exists in their imagination. 
-    It is important for them to build environment where both clients and employees will get pleasure from work because it’s the only way to assure highest level of productivity. 
-    Their goal is to develop first-class mobile applications and websites to provide their customers with the best solutions to maximize profits and make their ideas a reality.`,
+    description: `The company to turn into reality what exists in their imagination. It is important for them to build environment where both clients and employees will get pleasure from work because it's the only way to assure highest level of productivity. Their goal is to develop first-class mobile applications and websites to provide their customers with the best solutions to maximize profits and make their ideas a reality.`,
   },
 ];

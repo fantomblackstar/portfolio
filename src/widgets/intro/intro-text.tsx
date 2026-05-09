@@ -14,9 +14,9 @@ const IntroText = () => {
         </span>
       </h1>
       <h3 className="text-lg font-normal text-secondary md:w-[35rem] 2xl:text-xl">
-        I&apos;m fullstack developer who turns ambitious ideas into reality. With 4+ years of creating
-        high-performance web applications, I specialize in React.js ecosystems and scalable
-        solutions. Let&apos;s turn your ideas into success!
+        I&apos;m a Full Stack Developer who turns ambitious ideas into reality. With ~5 years of
+        building SaaS, multi-tenant web applications, and CMS-driven platforms using React, Next.js,
+        Node.js, and TypeScript. Let&apos;s turn your ideas into success!
       </h3>
     </AnimatedBlock>
   );

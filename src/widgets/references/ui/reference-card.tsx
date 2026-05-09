@@ -11,17 +11,13 @@ export const ReferenceCard: FC<Reference> = ({
   position,
   quote,
   email,
-  logoUrl,
+  logo,
   linkedInUrl,
 }) => {
   return (
     <GlareCard className="flex flex-col justify-center gap-5 rounded-md bg-card p-6 text-tertiary shadow-lg transition-all duration-300 hover:shadow-xl lg:gap-8">
       <div className="space-y-4">
-        <img
-          src={logoUrl}
-          alt={name}
-          className="mx-auto mt-5 block size-16 rounded-full md:size-20"
-        />
+        <img src={logo} alt={name} className="mx-auto mt-5 block size-16 rounded-full md:size-20" />
         <div className="space-y-1 text-center">
           <h3 className="text-xl font-medium text-neutral-200">{name}</h3>
           <p>{position}</p>

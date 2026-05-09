@@ -39,6 +39,7 @@ export const TECH_CATEGORIES: TechCategory[] = [
       { name: 'React-hook-form' },
       { name: 'Formik' },
       { name: 'Reactstrap', icon: 'reactbootstrap/reactbootstrap-original.svg' },
+      { name: 'React-hook-form' },
     ],
   },
   {
@@ -57,9 +58,17 @@ export const TECH_CATEGORIES: TechCategory[] = [
       { name: 'Node.js', icon: 'nodejs/nodejs-original.svg' },
       { name: 'Express', icon: 'express/express-original.svg' },
       { name: 'Fastify', icon: 'fastify/fastify-original.svg' },
+      { name: 'Nest.js', icon: 'nestjs/nestjs-original.svg' },
       { name: 'Mongoose', icon: 'mongoose/mongoose-original.svg' },
       { name: 'Prisma', icon: 'prisma/prisma-original.svg' },
-      { name: 'FCM', icon: 'firebase/firebase-plain.svg' },
+    ],
+  },
+  {
+    title: 'Databases',
+    items: [
+      { name: 'PostgreSQL', icon: 'postgresql/postgresql-original.svg' },
+      { name: 'MongoDB', icon: 'mongodb/mongodb-original.svg' },
+      { name: 'Firebase', icon: 'firebase/firebase-plain.svg' },
     ],
   },
   {
@@ -68,7 +77,6 @@ export const TECH_CATEGORIES: TechCategory[] = [
       { name: 'REST API' },
       { name: 'Axios' },
       { name: 'Apollo GraphQL', icon: 'graphql/graphql-plain.svg' },
-      { name: 'Directus SDK' },
     ],
   },
   {
@@ -85,6 +93,10 @@ export const TECH_CATEGORIES: TechCategory[] = [
     items: [
       { name: 'Git', icon: 'git/git-original.svg' },
       { name: 'GitHub', icon: 'github/github-original.svg' },
+      { name: 'Azure', icon: 'azure/azure-original.svg' },
+      { name: 'FCM', icon: 'firebase/firebase-plain.svg' },
+      { name: 'Directus CMS' },
+      { name: 'Payload CMS' },
       { name: 'i18n' },
       { name: 'Next-intl' },
       { name: 'Date-fns' },
@@ -98,6 +110,7 @@ export const TECH_CATEGORIES: TechCategory[] = [
       { name: 'ClickUp' },
       { name: 'Yarn', icon: 'yarn/yarn-original.svg' },
       { name: 'NPM', icon: 'npm/npm-original-wordmark.svg' },
+      { name: 'Teamwork' },
     ],
   },
 ];

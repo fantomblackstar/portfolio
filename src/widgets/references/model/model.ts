@@ -5,6 +5,6 @@ export interface Reference {
   position: string;
   quote: string | null;
   email?: string;
-  logoUrl: string;
+  logo: string;
   linkedInUrl: string;
 }
