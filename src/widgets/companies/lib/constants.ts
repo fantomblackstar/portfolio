@@ -1,3 +1,4 @@
+import AcademySmartLogo from '@/shared/assets/images/academy-smart-logo.svg';
 import AppexoftLogo from '@/shared/assets/images/appexoft_logo.jpeg';
 import DarlyLogo from '@/shared/assets/images/darly_solutions_logo.jpeg';
 import LumitechLogo from '@/shared/assets/images/lumitech_fzco_logo.jpeg';
@@ -6,11 +7,20 @@ import type { CompanyCard } from '../model';
 
 export const COMPANIES_INFO: CompanyCard[] = [
   {
+    name: 'Academy Smart',
+    logo: AcademySmartLogo,
+    position: 'Software Engineer',
+    startDate: 'Aug 2026',
+    endDate: null,
+    link: 'https://academysmart.com/',
+    description: `Academy Smart is a custom LMS development company operating since 2009 with a 4.9/5 Clutch rating. It specializes in tailored learning platforms for corporate training providers, edtech firms, and regulated industries. Its pre-built LMS foundation with SCORM, xAPI, LTI, and multi-tenancy cuts development time by 50% compared with typical builds and can reduce client costs versus SaaS subscription models. Notable work includes an enterprise LMS for Cyber Inc. that reduced costs by 68% and an AI-driven learning portal for EI Assessment Platform serving over 38,000 users.`,
+  },
+  {
     name: 'Lumitech',
     logo: LumitechLogo,
     position: 'Full Stack Developer',
     startDate: 'Aug 2024',
-    endDate: null,
+    endDate: 'Aug 2026',
     link: 'https://lumitech.co/',
     description: `Lumitech is a custom software development company based in the UAE, achieving 2x engineering growth in 2024 and ranked among Clutch's 100 fastest-growing software development companies. Focus is on building AI- and tech-driven development teams to help businesses increase operational efficiency and adapt to an AI-driven industry through custom software.`,
   },
