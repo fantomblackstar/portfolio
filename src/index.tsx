@@ -1,8 +1,15 @@
 import '@/shared/assets/styles/index.css';
 
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(<App />);
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+root.render(
+  <BrowserRouter basename={basename}>
+    <App />
+  </BrowserRouter>,
+);

@@ -5,4 +5,6 @@ export * from './EyeIcon';
 export * from './GithubIcon';
 export * from './GmailIcon';
 export * from './LinkedInIcon';
+export * from './PortfolioIcon';
+export * from './QrCodeIcon';
 export * from './TelegramIcon';
